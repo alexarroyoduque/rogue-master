@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g1">
+    <path
+       d="M 0,128 V 0 h 16 16 v 8 8 h 24 24 v 8 8 h 24 24 v 8 8 h 24 24 v 8 8 h 24 24 v 8 8 h 16 16 v 8 8 h -16 -16 v 8 8 h -24 -24 v 8 8 h -24 -24 v 8 8 H 104 80 v 8 8 H 56 32 v 48 48 H 16 0 Z"
+       id="path1" />
+  </g>
+</svg>

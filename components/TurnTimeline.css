@@ -1,0 +1,44 @@
+/* TurnTimeline.css */
+.timeline {
+  display: flex; /* Usamos flexbox para mostrar en fila horizontal */
+  overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+  white-space: nowrap; /* Evita el salto de línea de los elementos */
+}
+
+.timeline-turn {
+  padding: .1rem 0;
+  margin: 0;
+  font-size: .7rem;
+}
+
+@media screen and (min-width: 321px) {
+  .timeline-turn  {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (min-width: 391px) {
+  .timeline-turn  {
+    font-size: 1rem;
+  }
+}
+
+.timeline-turn:first-child {
+  background-color: #fff;
+  color: black;
+  padding: .1rem;
+  position: relative;
+  z-index: 99;
+}
+
+.timeline-turn:first-child::after {
+  content: '▲';
+  position: absolute;
+  top: 100%; /* Coloca el triángulo justo debajo del elemento */
+  left: 50%; /* Mueve el triángulo al centro horizontal del elemento */
+  transform: translateX(-50%); /* Centra el triángulo exactamente */
+  color: red;
+  z-index: 9999; /* Asegura que el triángulo esté por encima de otros elementos */
+  white-space: nowrap; /* Evita que el contenido pueda colapsar si es más largo */
+  pointer-events: none; 
+}

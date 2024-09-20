@@ -1,0 +1,10 @@
+.routes {
+  display: flex;
+  justify-content: space-around;
+  gap: .9rem;
+}
+
+.route-item,
+.route-item .arrow {
+  display: block;
+}

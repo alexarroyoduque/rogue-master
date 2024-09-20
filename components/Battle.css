@@ -1,0 +1,76 @@
+.battle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .4rem;
+}
+
+.battle-container h2 {
+  margin: 0 0 .2rem 0;
+}
+
+.player-monster-row {
+  display: flex;
+  justify-content: space-between; /* Separa al jugador y al monstruo */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  width: 100%; /* El contenedor ocupa el 100% del ancho */
+  max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+  margin-bottom: 1rem; /* Espacio debajo de la fila */
+}
+
+.player-container, .monster-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea los elementos arriba */
+  width: 48%; /* Cada contenedor ocupa el 48% del ancho total */
+}
+
+.inventory {
+  border: 2px dotted #fff;
+  padding: .2rem;
+}
+
+.inventory-item p{
+  margin: 0 0 .2rem 0;
+}
+
+.turn-indicator {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}
+
+.grid-cell {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.grid.disabled .grid-cell,
+.grid-cell.disabled {
+  cursor: not-allowed;
+  pointer-events: none; /* Deshabilita los eventos de clic */
+
+  background-image: linear-gradient(
+    45deg, 
+    #fff 10%, 
+    transparent 10%, 
+    transparent 50%, 
+    #fff 50%, 
+    #fff 60%, 
+    transparent 60%, 
+    transparent
+  );
+  background-size: 30px 30px; /* Tamaño más grande para espaciar más las líneas */
+  border: 2px solid transparent;
+}

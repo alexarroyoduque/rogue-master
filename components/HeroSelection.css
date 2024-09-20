@@ -1,0 +1,21 @@
+.hero-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.hero-card {
+  width: 160px;
+}
+
+.unlock {
+  font-size: 1rem;
+  padding: .3rem;
+  background-color: #24282f;
+}

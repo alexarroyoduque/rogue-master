@@ -1,0 +1,87 @@
+@import url('./assets/fonts/fontello/css/pixel.css');
+
+@font-face {
+  font-family: 'easvhs';
+  src: url('./assets/fonts/easvhs.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'easvhs', sans-serif;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  font-family: 'easvhs', sans-serif;
+  text-transform: uppercase;
+}
+
+.App {
+  text-align: center;
+}
+
+
+h1, h2, h3 {
+  border-bottom: 2px solid #fff;
+  margin: 0 0 1rem 0;
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  border: 0;
+  font-size: 1.4rem;
+}
+
+p {
+  margin: .4rem;
+}
+
+.selectable {
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+button:hover,
+.selectable:hover {
+  border-style: dashed;
+}
+
+.selectable:disabled,
+.selectable.disabled {
+  cursor: not-allowed;
+  pointer-events: none; /* Deshabilita los eventos de clic */
+
+  background-image: linear-gradient(
+    45deg, 
+    #fff 10%, 
+    transparent 10%, 
+    transparent 50%, 
+    #fff 50%, 
+    #fff 60%, 
+    transparent 60%, 
+    transparent
+  );
+  background-size: 30px 30px; /* Tamaño más grande para espaciar más las líneas */
+  border: 2px solid transparent;
+}
+
+.selectable.selected {
+  box-shadow: inset 0px 0px 0px 8px #fff;
+}
